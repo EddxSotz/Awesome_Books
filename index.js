@@ -30,3 +30,14 @@ function displayBooks() {
     bookList.appendChild(hr);
   });
 }
+
+displayBooks();
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const bookTitle = document.getElementById('titleInput');
+  const bookAuthor = document.getElementById('authorInput');
+  addBook(bookTitle.value, bookAuthor.value);
+  bookTitle.value = '';
+  bookAuthor.value = '';
+});
