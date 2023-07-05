@@ -118,6 +118,10 @@ Install this project with:
 
 - GitHub: [@githubhandle](https://github.com/EddxSotz)
 
+👤 **Javier Jesus Martinez**
+
+- GitHub: [@githubhandle](https://github.com/jlcarrascof)
+
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>

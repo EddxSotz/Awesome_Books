@@ -3,3 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  padding: 6rem;
+}
+
+ul {
+  margin-bottom: 2rem;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+h1 {
+  margin-bottom: 2rem;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+.inputs {
+  margin: 1rem 0;
+}
