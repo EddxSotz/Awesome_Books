@@ -9,4 +9,13 @@ class Book {
     this.bookAuthor = document.getElementById('authorInput');
   }
 
+  removeBook(book) {
+    bookList = bookList.filter((element) => element !== book);
+    localStorage.setItem('BooksList', JSON.stringify(bookList));
+    this.displayAllBooks();
+  }
+
+  displayAllBooks() {
+    
+  }
 }
