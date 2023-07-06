@@ -2,7 +2,6 @@ const form = document.getElementById('form'); // Store html form element to vari
 const allBooks = document.getElementById('bookList'); // store html ul element to var
 const errorMessage = document.getElementById('error_message');
 
-
 let booksList = JSON.parse(localStorage.getItem('BooksList')) || []; // get local storage of books saved and pass it to object or array if false
 
 class Book {
@@ -17,7 +16,7 @@ class Book {
     this.displayAllBooks();
   }
 
-  displayAllBooks() {    
+  displayAllBooks() {
     allBooks.innerHTML = '';
     booksList.forEach((book) => {
       const bookListItem = document.createElement('li');
