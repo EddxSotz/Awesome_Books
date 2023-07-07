@@ -72,3 +72,43 @@ button:hover {
   border: 2px solid #757575;
   box-shadow: 0 0.5em 0.5em -0.4em #757575;
 }
+
+/* Javier's CSS */
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #333;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+#form {
+  position: relative;
+  min-height: 400px; 
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 20px; 
+}

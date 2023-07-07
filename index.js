@@ -59,3 +59,4 @@ form.addEventListener('submit', (event) => {
     errorMessage.textContent = 'Please enter a value';
   }
 });
+
