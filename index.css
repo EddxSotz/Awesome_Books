@@ -9,6 +9,8 @@ body {
   grid-auto-rows: auto 1fr auto;
   text-align: center;
   min-height: 100vh;
+  font-family: sans-serif;
+  padding: 1rem;
 }
 
 .container {
@@ -34,6 +36,10 @@ body {
 
 #bookList li:nth-child(even) {
   background-color: #cecece;
+}
+
+h1 {
+  margin-bottom: 2rem;
 }
 
 hr {
@@ -77,6 +83,11 @@ button:hover {
   display: none;
 }
 
+#contact p {
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+}
+
 /* Javier's CSS */
 nav {
   display: flex;
@@ -103,9 +114,6 @@ nav {
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
   padding: 1rem;
-  text-align: center;
-  margin-top: 20px;
+  border: 3px solid black;
 }

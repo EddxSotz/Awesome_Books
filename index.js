@@ -91,4 +91,3 @@ bookAddNavLink.addEventListener('click', () => {
   contactContainer.classList.add('hidden');
   errorMessage.textContent = '';
 });
-
