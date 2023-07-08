@@ -7,19 +7,50 @@
   <title>Awesome Books</title>
 </head>
 <body>
-  <h1>Awesome Books</h1>
-  <ul id="bookList"></ul>
-
-  <form id="form" class="form">
-    <h2 for="text" class="title">Add a new Book</h2>
-    <div class="inputs">
-      <input type="text" id="titleInput" class="titleInput" placeholder="Title">
-      <br>
-      <input type="text" id="authorInput" class="authorInput" placeholder="Author">
+  <header>
+    <nav>
+      <h2>Awesome books</h2>
+        <ul class="nav-menu">
+          <li class="nav-item" id="nav-list">List</li>        
+          <li class="nav-item" id="nav-add">Add New</li>
+          <li class="nav-item" id="nav-contact">Contact</li>
+        </ul>
+    </nav>
+  </header>
+  
+  <main class="container">
+    <div id="books" class="">
+      <h1>Awesome Books</h1>
+      <ul id="bookList"></ul>
     </div>
-    <button id="btn" class="btn" type="submit">Add Book</button>
-    <span id="error_message"></span>
-  </form>
+    
+    <div id="addBook" class="hidden">
+      <h1 class="title">Add a new Book</h1>
+      <form id="form" class="form">        
+        <div class="inputs">
+          <input type="text" id="titleInput" class="titleInput" placeholder="Title">
+          <br>
+          <input type="text" id="authorInput" class="authorInput" placeholder="Author">
+        </div>
+        <button id="btn" class="btn" type="submit">Add Book</button>        
+      </form>
+      <span id="error_message"></span>
+    </div>
+    
+    <div id="contact" class="hidden">
+      <h1>Contact Information</h1>
+      <p>Do you have any questions or just want to say "Hello?"<br>
+      You can reach out to us!<br>  
+      Our E-mail: <a href="mailto:email@email.com">email@email.com</a><br>
+      Our Phone: <a href="tel:500-000-00">500-000-00</a><br>
+      Our Address: Streetname 22, 84503 City, Country</p>
+    </div>
+
+  </main>
+  
+  <footer>
+    <p>© 2023 Project Awesome Books. All rights reserved.</p>
+  </footer>
 
   <script src="index.js"></script>
 </body>

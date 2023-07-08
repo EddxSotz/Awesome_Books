@@ -5,18 +5,26 @@
 }
 
 body {
-  padding: 6rem;
   display: grid;
-  grid-auto-columns: 1fr auto;
+  grid-auto-rows: auto 1fr auto;
   text-align: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  padding: 1rem;
 }
 
-ul {
-  margin-bottom: 2rem;
+.container {
+  width: 80%;
+  margin-inline: auto;
+  padding-top: 10%;
+}
+
+#bookList {
   border: 3px solid black;
+  width: 100%;
 }
 
-ul li {
+#bookList li {
   list-style-type: none;
   padding: 1rem;
   display: flex;
@@ -26,7 +34,7 @@ ul li {
   font-size: 1.25rem;
 }
 
-ul li:nth-child(even) {
+#bookList li:nth-child(even) {
   background-color: #cecece;
 }
 
@@ -52,23 +60,60 @@ form {
 
 button {
   background-color: white;
-  border: solid 2px black;
+  border: solid 3px black;
   padding: 0.5rem 2rem;
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 input {
   border: 3px solid black;
   padding: 0.5rem 2rem;
   margin-bottom: 1rem;
-}
-
-#btn {
-  position: absolute;
+  width: 50%;
 }
 
 button:hover {
   cursor: pointer;
   border: 2px solid #757575;
   box-shadow: 0 0.5em 0.5em -0.4em #757575;
+}
+
+.hidden {
+  display: none;
+}
+
+#contact p {
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+}
+
+/* Javier's CSS */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 3px solid black;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-item {
+  display: flex;
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+}
+
+footer {
+  padding: 1rem;
+  border: 3px solid black;
 }

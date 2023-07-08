@@ -28,7 +28,7 @@
 # 📖 Awesome Books<a name="about-project"></a>
 
 
-Basic website that allows users to add/remove books from a list by using JavaScript objects and arrays.
+Basic website that allows users to add/remove books from a list by using JavaScript classes and local storage.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -41,7 +41,7 @@ Basic website that allows users to add/remove books from a list by using JavaScr
 
 ### Key Features <a name="key-features"></a>
 <ul>
-<li>Allows users to add/remove books from a list by using JavaScript objects and arrays.</li>
+<li>Allows users to add/remove books from a list by using JavaScript classes.</li>
 <li>Data is preserved in the browser's memory by using local storage</li>
 </ul>
 
@@ -108,6 +108,43 @@ Install this project with:
   </ul>
 </details>
 
+### Usage
+
+To run the project, execute the following command:
+
+<!--
+Example command:
+
+```sh
+  rails server
+```
+--->
+
+### Run tests
+
+To run tests, run the following command:
+
+<!--
+Example command:
+
+```sh
+  bin/rails test test/models/article_test.rb
+```
+--->
+
+### Deployment
+
+You can deploy this project using:
+
+<!--
+Example:
+
+```sh
+
+```
+ -->
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -126,7 +163,7 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
--Implement using classes 
+-Implement using Javascript modules 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
