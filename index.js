@@ -2,6 +2,16 @@ const form = document.getElementById('form'); // Store html form element to vari
 const allBooks = document.getElementById('bookList'); // store html ul element to var
 const errorMessage = document.getElementById('error_message');
 
+// section containers
+const displayBooksContainer = document.getElementById('books');
+const addBookContainer = document.getElementById('addBook');
+const contactContainer = document.getElementById('contact');
+
+// Nav menu clickable elements
+const bookListNavLink = document.getElementById('nav-list');
+const bookAddNavLink = document.getElementById('nav-add');
+const contactNavLink = document.getElementById('nav-contact');
+
 let booksList = JSON.parse(localStorage.getItem('BooksList')) || []; // get local storage of books saved and pass it to object or array if false
 
 class Book {
@@ -54,9 +64,31 @@ form.addEventListener('submit', (event) => {
     newBook.addBook(bookTitle.value, bookAuthor.value);
     booksList = JSON.parse(localStorage.getItem('BooksList')) || [];
     newBook.displayAllBooks();
-    errorMessage.textContent = '';
+    errorMessage.textContent = 'Book added succesfully';
   } else {
-    errorMessage.textContent = 'Please enter a value';
+    errorMessage.textContent = 'Please enter a value!';
   }
+});
+
+// Display Books-List section
+bookListNavLink.addEventListener('click', () => {
+  displayBooksContainer.classList.remove('hidden');
+  addBookContainer.classList.add('hidden');
+  contactContainer.classList.add('hidden');
+});
+
+// Display Contact section
+contactNavLink.addEventListener('click', () => {
+  contactContainer.classList.remove('hidden');
+  displayBooksContainer.classList.add('hidden');
+  addBookContainer.classList.add('hidden');
+});
+
+// Display the Add-Book section
+bookAddNavLink.addEventListener('click', () => {
+  addBookContainer.classList.remove('hidden');
+  displayBooksContainer.classList.add('hidden');
+  contactContainer.classList.add('hidden');
+  errorMessage.textContent = '';
 });
 

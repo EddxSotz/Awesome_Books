@@ -5,18 +5,24 @@
 }
 
 body {
-  padding: 6rem;
   display: grid;
-  grid-auto-columns: 1fr auto;
+  grid-auto-rows: auto 1fr auto;
   text-align: center;
+  min-height: 100vh;
 }
 
-ul {
-  margin-bottom: 2rem;
+.container {
+  width: 80%;
+  margin-inline: auto;
+  padding-top: 10%;
+}
+
+#bookList {
   border: 3px solid black;
+  width: 100%;
 }
 
-ul li {
+#bookList li {
   list-style-type: none;
   padding: 1rem;
   display: flex;
@@ -26,12 +32,8 @@ ul li {
   font-size: 1.25rem;
 }
 
-ul li:nth-child(even) {
+#bookList li:nth-child(even) {
   background-color: #cecece;
-}
-
-h1 {
-  margin-bottom: 2rem;
 }
 
 hr {
@@ -52,19 +54,17 @@ form {
 
 button {
   background-color: white;
-  border: solid 2px black;
+  border: solid 3px black;
   padding: 0.5rem 2rem;
   font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 input {
   border: 3px solid black;
   padding: 0.5rem 2rem;
   margin-bottom: 1rem;
-}
-
-#btn {
-  position: absolute;
+  width: 50%;
 }
 
 button:hover {
@@ -73,24 +73,33 @@ button:hover {
   box-shadow: 0 0.5em 0.5em -0.4em #757575;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Javier's CSS */
-
-nav ul {
-  list-style-type: none;
+nav {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
-  background-color: #333;
+  border: 3px solid black;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+.nav-menu {
+  display: flex;
+  flex-direction: row;
 }
 
-nav ul li a:hover {
-  color: #ccc;
+.nav-item {
+  display: flex;
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+
+.nav-item:hover {
+  cursor: pointer;
 }
 
 footer {
@@ -98,17 +107,5 @@ footer {
   color: #fff;
   padding: 1rem;
   text-align: center;
-}
-
-#form {
-  position: relative;
-  min-height: 400px; 
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
