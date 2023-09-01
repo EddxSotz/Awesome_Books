@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
   font-family: sans-serif;
   padding: 1rem;
+  background-color: #e4c988;
 }
 
 .container {
@@ -20,8 +21,10 @@ body {
 }
 
 #bookList {
-  border: 3px solid black;
+  border: 3px solid #8d7b68;
   width: 100%;
+  background-color: #f6e1c3;
+  color: #392e1f;
 }
 
 #bookList li {
@@ -35,11 +38,12 @@ body {
 }
 
 #bookList li:nth-child(even) {
-  background-color: #cecece;
+  background-color: #e4c988;
 }
 
 h1 {
   margin-bottom: 2rem;
+  color: #392e1f;
 }
 
 hr {
@@ -59,16 +63,19 @@ form {
 }
 
 button {
-  background-color: white;
-  border: solid 3px black;
+  background-color: #f6e1c3;
+  border: 3px solid #8d7b68;
+  color: #392e1f;
   padding: 0.5rem 2rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
 }
 
 input {
-  border: 3px solid black;
-  padding: 0.5rem 2rem;
+  border: 3px solid #8d7b68;
+  background-color: #f6e1c3;
+  font-size: 1.25rem;
+  padding: 1rem 2rem;
   margin-bottom: 1rem;
   width: 50%;
 }
@@ -86,16 +93,18 @@ button:hover {
 #contact p {
   font-size: 1.25rem;
   line-height: 1.8rem;
+  color: #392e1f;
 }
 
-/* Javier's CSS */
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  border: 3px solid black;
+  border: 2px solid #8d7b68;
+  background-color: #f6e1c3;
+  color: #392e1f;
 }
 
 .nav-menu {
@@ -115,5 +124,6 @@ nav {
 
 footer {
   padding: 1rem;
-  border: 3px solid black;
+  border: 3px solid #8d7b68;
+  background-color: #f6e1c3;
 }
